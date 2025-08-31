@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ケーキ屋サンプルHP | ケーキ屋さん</title>
+    <meta name="description" content="季節のケーキと焼き菓子のパティスリー。テイクアウト・バースデーケーキのご予約承ります。" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <style>
+      /* Hero background cover (inline override) */
+      .hero {
+        position: relative;
+        min-height: clamp(360px, 50vh, 640px);
+        display: grid;
+        place-items: center;
+        padding: 0;
+        background-image:
+          linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+          url('assets/img/menu/ケーキ屋ヒーローセクション.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .hero .hero-inner { text-align: center; color: #fff; padding: 2.5rem 0; }
+      .hero .hero-content { max-width: 720px; margin: 0 auto; }
+      .hero .hero-actions { justify-content: center; }
+      .hero .btn-ghost { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.4); color: #fff; }
+      .hero .btn-ghost:hover { background: rgba(255,255,255,0.25); }
+      @media (min-width: 900px) {
+        .hero { min-height: 70vh; }
+      }
+      /* About image styling */
+      .about-media img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 1rem; border: 1px solid rgba(0,0,0,.06); box-shadow: 0 10px 30px rgba(26, 3, 15, 0.08); }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">本文へスキップ</a>
+
+    <header class="site-header" id="top" aria-label="サイトヘッダー">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="ホームへ">
+          <span class="brand-mark" aria-hidden="true">🍰</span>
+          <span class="brand-name">ケーキ屋サンプルHP</span>
+        </a>
+
+        <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="メニューを開閉">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="グローバルナビゲーション">
+          <ul>
+            <li><a href="#menu">メニュー</a></li>
+            <li><a href="#about">お店紹介</a></li>
+            <li><a href="#gallery">ギャラリー</a></li>
+            <li><a href="#access">アクセス</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-label="メインビジュアル">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1>季節の素材でつくる、とっておきのひとくち。</h1>
+            <p>毎朝焼き上げるケーキと焼き菓子を、心を込めて。
+              バースデーや記念日のオーダーも承ります。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#menu">メニューを見る</a>
+              <a class="btn btn-ghost" href="#access">アクセス</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section" aria-label="メニュー">
+        <div class="container">
+          <h2 class="section-title">メニュー</h2>
+          <div class="cards">
+            <article class="card">
+              <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/ショートケーキ.jpg" loading="lazy" width="600" height="450" alt="いちごのショートケーキの写真" />
+              <div class="card-body">
+                <h3>いちごのショートケーキ</h3>
+                <p>国産いちごと生クリームの定番。スポンジはしっとり。</p>
+                <p class="price">¥540</p>
+              </div>
+            </article>
+            <article class="card">
+              <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/イチゴのロールケーキ.jpg" loading="lazy" width="600" height="450" alt="いちごのロールケーキの写真" />
+              <div class="card-body">
+                <h3>いちごのロールケーキ</h3>
+                <p>甘酸っぱい苺とふわふわスポンジをくるりと巻いた定番。</p>
+                <p class="price">¥620</p>
+              </div>
+            </article>
+            <article class="card">
+              <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/和栗モンブラン.jpg" loading="lazy" width="600" height="450" alt="和栗のモンブランの写真" />
+              <div class="card-body">
+                <h3>和栗のモンブラン</h3>
+                <p>熊本産の和栗ペーストを贅沢に。サクサクメレンゲ土台。</p>
+                <p class="price">¥680</p>
+              </div>
+            </article>
+            <article class="card">
+              <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/フルーツタルト.jpg" loading="lazy" width="600" height="450" alt="季節のフルーツタルトの写真" />
+              <div class="card-body">
+                <h3>季節のフルーツタルト</h3>
+                <p>旬の果物をたっぷりと。自家製カスタードと相性抜群。</p>
+                <p class="price">¥650</p>
+              </div>
+            </article>
+            <article class="card">
+              <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/シュークリーム.jpg" loading="lazy" width="600" height="450" alt="カスタードシュークリームの写真" />
+              <div class="card-body">
+                <h3>カスタードシュー</h3>
+                <p>外はサクッと中はとろ～り。定番人気の一品。</p>
+                <p class="price">¥260</p>
+              </div>
+            </article>
+            <article class="card">
+              <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/マカロン.jpg" loading="lazy" width="600" height="450" alt="マカロン詰め合わせの写真" />
+              <div class="card-body">
+                <h3>マカロン詰め合わせ</h3>
+                <p>色とりどりの味をボックスで。贈り物にも最適です。</p>
+                <p class="price">¥1,200</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section section-alt" aria-label="お店紹介">
+        <div class="container about-grid">
+          <div class="about-text">
+            <h2 class="section-title">お店紹介</h2>
+            <ul class="features">
+              <li><strong>素材:</strong> 北海道産生クリーム、平飼い卵など厳選素材。</li>
+              <li><strong>手仕事:</strong> 毎朝店内工房で一つひとつ丁寧に。</li>
+              <li><strong>季節感:</strong> 旬の果物を活かした期間限定メニュー。</li>
+            </ul>
+            <p>私たちは「また食べたい」と思っていただける味を目指し、
+              甘さ・香り・食感のバランスにこだわっています。記念日ケーキのカスタムもお気軽に。</p>
+          </div>
+          <div class="about-media">
+            <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/プロフィール画像.png" loading="lazy" width="800" height="600" alt="お店紹介の写真" />
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section" aria-label="ギャラリー">
+        <div class="container">
+          <h2 class="section-title">ギャラリー</h2>
+          <div class="gallery-grid">
+            <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/ショートケーキ.jpg" loading="lazy" alt="いちごのショートケーキ" />
+            <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/イチゴのロールケーキ.jpg" loading="lazy" alt="いちごのロールケーキ" />
+            <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/和栗モンブラン.jpg" loading="lazy" alt="和栗のモンブラン" />
+            <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/フルーツタルト.jpg" loading="lazy" alt="季節のフルーツタルト" />
+            <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/シュークリーム.jpg" loading="lazy" alt="カスタードシュー" />
+            <img class="with-fallback" data-fallback="assets/img/placeholder.svg" src="assets/img/menu/マカロン.jpg" loading="lazy" alt="マカロン詰め合わせ" />
+          </div>
+        </div>
+      </section>
+
+      <section id="access" class="section section-alt" aria-label="アクセス">
+        <div class="container access-grid">
+          <div class="shop-info">
+            <h2 class="section-title">アクセス</h2>
+            <p><strong>住所:</strong> 東京都〇〇区〇〇 1-2-3 ルミエールビル1F</p>
+            <p><strong>TEL:</strong> <a href="tel:0312345678">03-1234-5678</a></p>
+            <p><strong>営業時間:</strong> 10:00 - 19:00（火曜定休）</p>
+            <div class="map-placeholder" role="img" aria-label="地図のプレースホルダー">MAP</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" aria-label="フッター">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">🍰</span>
+          <span class="brand-name">ケーキ屋サンプルHP</span>
+        </div>
+        <div class="footer-meta">
+          <p>&copy; <span id="year"></span> ケーキ屋サンプルHP</p>
+        </div>
+        <div class="footer-links">
+          <a href="#menu">メニュー</a>
+          <a href="#about">お店紹介</a>
+          <a href="#access">アクセス</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+  </html>
